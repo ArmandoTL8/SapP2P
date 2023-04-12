@@ -1,0 +1,74 @@
+<mvc:View
+	controllerName="com.axiomasoluciones.wisemobile.Modulo_WiseMobile.GondiQA.controller.EstatusRecepcion"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<Page id="idPage" showHeader="false" enableScrolling="true">
+		<subHeader>
+			<Toolbar design="Info">
+				<Label text="{i18n>EstatusRecepcion.title}" />
+			</Toolbar>
+		</subHeader>
+		<content>
+			<Table
+				id="idTableEstatusRecepcion"
+				inset="false"
+				items="{
+						path: 'mTables>/XXX'
+				}"
+				growing="true"
+				growingThreshold="5"
+				growingScrollToLoad="false"
+				itemPress="onItemPressEstatusRecepcion">
+				<headerToolbar>
+					<Toolbar id="idToolbarEstatusRecepcion">
+						<Title text="{i18n>Records-found}" level="H2"/>
+						<Title id="idCountTableEstatusRecepcion" text="(0)" level="H2"/>
+						<ToolbarSpacer/>
+						<Button press="onPressExportar" text="{i18n>Exportar}"/>
+						<Button icon="sap-icon://table-column" press="onPersoPress" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="idCol1"
+						visible="{mManageControls>EstatusRecepcion.Monitor.Table.Column.1}">
+						<Text text="{i18n>EstatusRecepcion.Monitor.Table.Column.1}"/>
+					</Column>
+					<Column id="idCol2"
+						visible="{mManageControls>EstatusRecepcion.Monitor.Table.Column.2}">
+						<Text text="{i18n>EstatusRecepcion.Monitor.Table.Column.2}"/>
+					</Column>
+					<Column id="idCol3"
+						visible="{mManageControls>EstatusRecepcion.Monitor.Table.Column.3}">
+						<Text text="{i18n>EstatusRecepcion.Monitor.Table.Column.3}"/>
+					</Column>
+					
+					<Column id="idCol4"
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						visible="{mManageControls>EstatusRecepcion.Monitor.Table.Column.4}">
+						<Text text="{i18n>EstatusRecepcion.Monitor.Table.Column.4}"/>
+					</Column>
+					
+				</columns>
+			
+				<items>
+					<ColumnListItem
+						vAlign="Middle">
+						<cells>
+							<Text text="{mTables>Factura}"/>
+							<Text text="{mTables>FechaRecepcion}"/>
+							<Text text="{mTables>Estado}"/>
+							<Text text="{mTables>Mensaje}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			
+			<FlexBox height="100px"  />
+			
+		</content>
+	</Page>
+</mvc:View>               

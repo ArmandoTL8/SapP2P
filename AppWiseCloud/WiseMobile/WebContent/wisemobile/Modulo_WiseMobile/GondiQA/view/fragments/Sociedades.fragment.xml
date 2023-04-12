@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<VBox class="sapUiSmallMargin">
+	
+		<List
+			items="{path: 'mCombos>/SOCIEDADES_ZW20'}"			
+			growing="true"
+			growingThreshold="4"
+			growingScrollToLoad="false"
+			mode="SingleSelectMaster"
+			select="onChangeSociedad">
+			<StandardListItem
+				title="{mCombos>Bukrs}"
+				description="{mCombos>Butxt}"
+				icon="{ProductPicUrl}"
+				iconDensityAware="false"
+				iconInset="false" />
+		</List>
+	</VBox>
+</core:FragmentDefinition>

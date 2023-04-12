@@ -1,0 +1,691 @@
+!SESSION 2023-04-10 18:52:37.280 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-10 18:54:03.880
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-10 18:54:36.131
+!MESSAGE Logback config file: C:\Users\ASMX222\eclipse-workspace\Wise\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-04-10 18:54:40.295
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-04-10 18:54:40.295
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-04-10 18:54:40.295
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-04-10 18:55:03.456
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ASMX222'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:05:51.593
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:05:52.788
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:05:53.047
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:05:54.985
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:07:41.142
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:07:43.330
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:07:44.355
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-10 19:07:45.595
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:20.982
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.build.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:20.996
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.forbiddenpatterns.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:20.997
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.workitempolicy,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:20.998
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:20.999
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.build,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.001
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.forbiddenpatterns,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.003
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.004
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.checkforcomments,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.013
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.workitempolicy.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.045
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.checkforcomments.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.287
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.327
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.pid,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.351
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.pid.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.402
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.404
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.workitemquerypolicy.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.407
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.408
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.408
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.checkinpolicies.workitemquerypolicy,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.680
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui.teambuild,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.904
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui.vcexplorer,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.909
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui.teambuild.egit,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.912
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui.teambuild.egit.nl1,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:21.916
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui.teambuild.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:22.189
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.common.ui.vcexplorer.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:22.370
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:22.659
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.microsoft.tfs.client.eclipse.feature,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.001
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse.nl1,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.028
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse.help,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.071
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse.help.nl1,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.093
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.microsoft.tfs.client.eclipse.nl1.feature,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.247
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse.ui.egit,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.281
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse.ui,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.460
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse.ui.egit.nl1,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.752
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.client.eclipse.ui.nl1,14.137.0.202203231501.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.856
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core.httpclient,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.985
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core.httpclient.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:23.988
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:24.596
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:25.007
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core.ws.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:25.256
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core.ws,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:25.904
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core.ws.runtime,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:25.918
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.jni,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:25.935
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.jni.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:26.061
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.logging,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:26.062
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.core.ws.runtime.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:26.078
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.logging.nl1,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:26.285
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.util,14.137.0.202203231500.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-04-10 19:08:26.441
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.tfs.util.nl1,14.137.0.202203231500.
+!SESSION 2023-04-10 19:09:23.058 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/C:/Users/ASMX222/eclipse-workspace/Wise/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-10 19:09:32.904
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-10 19:09:37.700
+!MESSAGE Logback config file: C:\Users\ASMX222\eclipse-workspace\Wise\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-04-10 19:09:40.826
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-04-10 19:09:40.826
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-04-10 19:09:40.826
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-04-10 19:09:47.793
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ASMX222'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.security 1 0 2023-04-10 19:11:54.347
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-04-10 19:19:18.023
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:195)
+	at com.microsoft.tfs.client.common.ui.framework.image.ImageUtils.createRectangular(ImageUtils.java:109)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerTileControl.setColorBar(TeamExplorerTileControl.java:219)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.pages.TeamExplorerHomePage.getPageContent(TeamExplorerHomePage.java:103)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerControl.showPageForItem(TeamExplorerControl.java:210)
+	at com.microsoft.tfs.client.common.ui.views.TeamExplorerView$NavigationListener.navigateToItem(TeamExplorerView.java:155)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.fireNavigateToEvent(TeamExplorerNavigator.java:52)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.access$300(TeamExplorerNavigator.java:18)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator$NavigationRunnable.run(TeamExplorerNavigator.java:246)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-04-10 19:21:57.853
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:195)
+	at com.microsoft.tfs.client.common.ui.framework.image.ImageUtils.createRectangular(ImageUtils.java:109)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerTileControl.setColorBar(TeamExplorerTileControl.java:219)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.pages.TeamExplorerHomePage.getPageContent(TeamExplorerHomePage.java:103)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerControl.showPageForItem(TeamExplorerControl.java:210)
+	at com.microsoft.tfs.client.common.ui.views.TeamExplorerView$NavigationListener.navigateToItem(TeamExplorerView.java:155)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.fireNavigateToEvent(TeamExplorerNavigator.java:52)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.access$300(TeamExplorerNavigator.java:18)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator$NavigationRunnable.run(TeamExplorerNavigator.java:246)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-04-10 19:21:57.854
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:195)
+	at com.microsoft.tfs.client.common.ui.framework.image.ImageUtils.createRectangular(ImageUtils.java:109)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerTileControl.setColorBar(TeamExplorerTileControl.java:219)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.pages.TeamExplorerHomePage.getPageContent(TeamExplorerHomePage.java:103)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerControl.showPageForItem(TeamExplorerControl.java:210)
+	at com.microsoft.tfs.client.common.ui.views.TeamExplorerView$NavigationListener.navigateToItem(TeamExplorerView.java:155)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.fireNavigateToEvent(TeamExplorerNavigator.java:52)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.access$300(TeamExplorerNavigator.java:18)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator$NavigationRunnable.run(TeamExplorerNavigator.java:246)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-04-10 19:21:57.856
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:195)
+	at com.microsoft.tfs.client.common.ui.framework.image.ImageUtils.createRectangular(ImageUtils.java:109)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerTileControl.setColorBar(TeamExplorerTileControl.java:219)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.pages.TeamExplorerHomePage.getPageContent(TeamExplorerHomePage.java:103)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerControl.showPageForItem(TeamExplorerControl.java:210)
+	at com.microsoft.tfs.client.common.ui.views.TeamExplorerView$NavigationListener.navigateToItem(TeamExplorerView.java:155)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.fireNavigateToEvent(TeamExplorerNavigator.java:52)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.access$300(TeamExplorerNavigator.java:18)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator$NavigationRunnable.run(TeamExplorerNavigator.java:246)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-04-10 19:21:57.857
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:195)
+	at com.microsoft.tfs.client.common.ui.framework.image.ImageUtils.createRectangular(ImageUtils.java:109)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerTileControl.setColorBar(TeamExplorerTileControl.java:219)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.pages.TeamExplorerHomePage.getPageContent(TeamExplorerHomePage.java:103)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerControl.showPageForItem(TeamExplorerControl.java:210)
+	at com.microsoft.tfs.client.common.ui.views.TeamExplorerView$NavigationListener.navigateToItem(TeamExplorerView.java:155)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.fireNavigateToEvent(TeamExplorerNavigator.java:52)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.access$300(TeamExplorerNavigator.java:18)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator$NavigationRunnable.run(TeamExplorerNavigator.java:246)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-04-10 19:21:57.858
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:195)
+	at com.microsoft.tfs.client.common.ui.framework.image.ImageUtils.createRectangular(ImageUtils.java:109)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerTileControl.setColorBar(TeamExplorerTileControl.java:219)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.pages.TeamExplorerHomePage.getPageContent(TeamExplorerHomePage.java:103)
+	at com.microsoft.tfs.client.common.ui.controls.teamexplorer.TeamExplorerControl.showPageForItem(TeamExplorerControl.java:210)
+	at com.microsoft.tfs.client.common.ui.views.TeamExplorerView$NavigationListener.navigateToItem(TeamExplorerView.java:155)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.fireNavigateToEvent(TeamExplorerNavigator.java:52)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator.access$300(TeamExplorerNavigator.java:18)
+	at com.microsoft.tfs.client.common.ui.teamexplorer.TeamExplorerNavigator$NavigationRunnable.run(TeamExplorerNavigator.java:246)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-04-10 19:22:15.071
+!MESSAGE Could not get hover region due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:152)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-04-10 19:22:16.037
+!MESSAGE Could not get hover information due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-04-10 19:22:25.306
+!MESSAGE Could not get hover region due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:152)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-04-10 19:22:25.827
+!MESSAGE Could not get hover information due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-04-10 19:22:27.527
+!MESSAGE [Info]	ESLint server running in node v18.13.0
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-04-10 19:22:28.042
+!MESSAGE [Warning]	Using Typescript version (user-setting) 4.9.5 from path "C:\Users\ASMX222\.p2\pool\plugins\org.eclipse.wildwebdeveloper_1.0.2.202302250247\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-04-10 19:22:28.500
+!MESSAGE [Info]	Typescript Server version info: {version=4.9.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-04-10 19:22:38.080
+!MESSAGE Could not get hover region due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:152)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-04-10 19:22:38.615
+!MESSAGE Could not get hover information due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

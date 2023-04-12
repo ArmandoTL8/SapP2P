@@ -1,0 +1,281 @@
+<mvc:View
+	controllerName="com.axiomasoluciones.wisemobile.Modulo_WiseMobile.GondiQA.controller.EnvioFacturas"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<Page id="idPage" showHeader="false" enableScrolling="true">
+		<subHeader>
+			<Toolbar design="Info">
+				<Label id="idEnvioFacturasTitle" text="{i18n>EnvioFacturas.title}" />
+			</Toolbar>
+		</subHeader>
+		<content>
+				<f:Form id="idFormEnvioFacturas"
+					editable="true">
+					<f:layout>
+						<f:ResponsiveGridLayout
+							labelSpanXL="4"
+							labelSpanL="4"
+							labelSpanM="4"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="0"
+							emptySpanL="0"
+							emptySpanM="0"
+							emptySpanS="0"
+							columnsXL="3"
+							columnsL="2"
+							columnsM="2"
+							singleContainerFullSize="false" />
+					</f:layout>
+					<f:formContainers>
+						
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement label="{i18n>EnvioFacturas.Form.1.Label.1}">
+									<f:fields>
+										<Select id="idComboSociedad"
+												items="{mCombos>/SOCIEDADES_ZW18}"
+												selectedKey="{mEnvioFacturas>Bukrs}" forceSelection="false" change="onChangeSociedad">
+												<core:ListItem key="{mCombos>BUKRS}" text="{mCombos>BUTXT}" />
+										</Select>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEArea" label="{i18n>EnvioFacturas.Form.1.Label.2}">
+									<f:fields>
+										<Select id="idComboArea"
+												items="{mCombos>/AREA_ZW18}"
+												selectedKey="{mEnvioFacturas>IdDireccion}" forceSelection="false" change="onChangeArea">
+												<core:ListItem key="{mCombos>IdDireccion}" text="{mCombos>DescDireccion}" />
+										</Select>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEResponsable" label="{i18n>EnvioFacturas.Form.1.Label.3}">
+									<f:fields>
+										<Select items="{mCombos>/RESPONSABLE_ZW18}" id="idComboResponsable"
+												selectedKey="{mEnvioFacturas>IdGerencia}" forceSelection="false">
+												<core:ListItem key="{mCombos>IdGerencia}" text="{mCombos>DescGerencia}" />
+										</Select>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEFechaFactura" label="{i18n>EnvioFacturas.Form.1.Label.4}">
+									<f:fields>
+										<DatePicker
+											id="idFechaFactura"
+											placeholder=""
+											value="{mEnvioFacturas>Bldat}"
+											displayFormat="YYYY-MM-dd"
+											valueFormat="yyyy-MM-dd"
+											change="handleChange"
+											class="sapUiSmallMarginBottom"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEFactura" label="{i18n>EnvioFacturas.Form.1.Label.5}">
+									<f:fields>
+										<Input value="{mEnvioFacturas>Factura}" id="idFactura" />
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEConcepto" label="{i18n>EnvioFacturas.Form.1.Label.6}">
+									<f:fields>
+										<Select items="{mCombos>/CONCEPTO_ZW18}" id="idComboConcepto"
+												selectedKey="{mEnvioFacturas>IdConcepto}" forceSelection="false">
+												<core:ListItem key="{mCombos>IdConcepto}" text="{mCombos>Concepto}" />
+										</Select>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFESubtotal" label="{i18n>EnvioFacturas.Form.1.Label.7}">
+									<f:fields>
+										<Input value="{mEnvioFacturas>Subtotal}" />
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEIVA" label="{i18n>EnvioFacturas.Form.1.Label.8}">
+									<f:fields>
+										<Select items="{mCombos>/IMPUESTOS_ZW18}" id="idComboIva"
+												selectedKey="{mEnvioFacturas>TaxCode}" forceSelection="false">
+												<core:ListItem key="{mCombos>TAXPER}" text="{mCombos>TEXT1}" />
+										</Select>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEMoneda" label="{i18n>EnvioFacturas.Form.1.Label.9}">
+									<f:fields>
+										<Select items="{mCombos>/MONEDAS_ZW18}" id="idComboMoneda"
+												selectedKey="{mEnvioFacturas>Waers}" forceSelection="false">
+												<core:ListItem key="{mCombos>WAERS}" text="{mCombos>LTEXT}" />
+										</Select>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEDocXML" label="{i18n>EnvioFacturas.Form.1.Label.10}" visible="false">
+									<f:fields>
+										<u:FileUploader width="100%"
+											id="idDocXML"
+											value="{mEnvioFacturas>XmlXstring}"
+											name="myFileUpload1"
+											fileType="xml"
+											change="handleValueChange"
+											tooltip="{i18n>Seleccionar_archivo}"/>
+											
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEDocPDF" label="{i18n>EnvioFacturas.Form.1.Label.11}">
+									<f:fields>
+										<u:FileUploader width="100%"
+											id="idDocPDF"
+											value="{mEnvioFacturas>PdfXstring}"
+											name="myFileUpload2"
+											fileType="pdf"
+											change="handleValueChange"
+											tooltip="{i18n>Seleccionar_archivo}"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement id="idFEDocOtros" label="{i18n>EnvioFacturas.Form.1.Label.12}">
+									<f:fields>
+										<u:FileUploader width="100%"
+											id="idDocOtroPDF"
+											value="{mEnvioFacturas>OpdfXstring}"
+											name="myFileUpload3"
+											fileType="pdf"
+											change="handleValueChange"
+											tooltip="{i18n>Seleccionar_archivo}"/>
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+						</f:FormContainer>
+						
+					</f:formContainers>
+				</f:Form>
+				
+				<Table
+					id="idTableEnvioFacturas"
+					mode="MultiSelect"
+					inset="false"
+					items="{
+							path: 'mTables>/ORDENCOMPRA_CFACTURA_1'
+					}"
+					footerText="Total: $0.00"
+					growing="true"
+					growingThreshold="5"
+					growingScrollToLoad="false">
+					<headerToolbar>
+						<Toolbar id="idToolbarEnvioFacturas_2">
+							<Title text="{i18n>Records-found}" level="H2"/>
+							<Title id="idCountTableEnvioFacturas_2" text="(0)" level="H2"/>
+							<ToolbarSpacer/>
+							<Button id="idBtnSelectDoc" press="onPressSelectDoc" text="{i18n>EnvioFacturas.Form.2.Button}" />
+							<Button icon="sap-icon://table-column" press="onPersoPress" />
+						</Toolbar>
+					</headerToolbar>
+					<columns>
+						<Column id="idCol1"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.1}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.1}"/>
+						</Column>
+						<Column id="idCol2"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.2}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.2}"/>
+						</Column>
+						<Column id="idCol3"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.3}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.3}"/>
+						</Column>
+						
+						<Column id="idCol4"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.4}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.4}"/>
+						</Column>
+						
+						<Column id="idCol5"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.5}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.5}"/>
+						</Column>
+						
+						<Column id="idCol6"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.6}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.6}"/>
+						</Column>
+						
+						<Column id="idCol7"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.7}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.7}"/>
+						</Column>
+						
+						<Column id="idCol8"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.8}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.8}"/>
+						</Column>
+						
+						<Column id="idCol9"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.9}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.9}"/>
+						</Column>
+						
+						<Column id="idCol10"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.10}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.10}"/>
+						</Column>
+						
+						<Column id="idCol11"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.11}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.11}"/>
+						</Column>
+						
+						<Column id="idCol12"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.12}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.12}"/>
+						</Column>
+						
+						<Column id="idCol13"
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							visible="{mManageControls>EnvioFacturas.Documentos.Popup.Table.Column.13}">
+							<Text text="{i18n>EnvioFacturas.Documentos.Popup.Table.Column.13}"/>
+						</Column>
+						
+					</columns>
+				
+					<items>
+						<ColumnListItem
+							vAlign="Middle">
+							<cells>
+								<Text text="{mTables>EBELN}"/>
+								<Text text="{mTables>EBELP}"/>
+								<Text text="{mTables>MBLNR}"/>
+								<Text text="{mTables>XBLNR}"/>
+								<Text text="{mTables>AEDAT}"/>
+								<Text text="{mTables>MATNR}"/>
+								<Text text="{mTables>PO_UNIT}"/>
+								<Text text="{mTables>TXZ01}"/>
+								<Text text="{mTables>CtdAut}"/>
+								<Text text="{mTables>CtdRec}"/>
+								<Text text="{mTables>PO_UNIT}"/>
+								<Text text="{mTables>NETWR}"/>
+								<Text text="{mTables>WAERS}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+				
+		</content>
+		
+	</Page>
+</mvc:View>

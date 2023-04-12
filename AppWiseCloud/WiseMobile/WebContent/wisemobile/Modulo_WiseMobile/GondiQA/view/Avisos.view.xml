@@ -1,0 +1,70 @@
+<mvc:View height="100%"
+	controllerName="com.axiomasoluciones.wisemobile.Modulo_WiseMobile.GondiQA.controller.Avisos"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<Page id="idPage" showHeader="false" enableScrolling="true">
+		<subHeader>
+			<Toolbar design="Info">
+				<Label text="{i18n>Avisos.title}" />
+			</Toolbar>
+		</subHeader>
+		<content>
+			<Table
+				id="idTableAvisos"
+				inset="false"
+				items="{
+						path: 'mTablesAvisos>/DOC_AVISOS'
+				}"
+				growing="true"
+				growingThreshold="5"
+				growingScrollToLoad="false"
+				itemPress="">
+				<headerToolbar>
+					<Toolbar id="idToolbarAvisos">
+						<Title text="{i18n>Records-found}" level="H2"/>
+						<Title id="idCountTableAvisos" text="(0)" level="H2"/>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://table-column" press="onPersoPress" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="idCol1" width="4rem"
+						visible="{mManageControls>Avisos.Monitor.Table.Column.1}">
+						<Text text="{i18n>Avisos.Monitor.Table.Column.1}"/>
+					</Column>
+					<Column id="idCol2" width="7rem"
+						visible="{mManageControls>Avisos.Monitor.Table.Column.2}">
+						<Text text="{i18n>Avisos.Monitor.Table.Column.2}"/>
+					</Column>
+					<Column id="idCol3"
+						hAlign="Center"
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						visible="{mManageControls>Avisos.Monitor.Table.Column.3}">
+						<Text text="{i18n>Avisos.Monitor.Table.Column.3}"/>
+					</Column>
+					
+					<Column id="idCol4" width="5rem"
+						visible="{mManageControls>Avisos.Monitor.Table.Column.4}">
+						<Text text="{i18n>Avisos.Monitor.Table.Column.4}"/>
+					</Column>
+					
+				</columns>
+			
+				<items>
+					<ColumnListItem
+						vAlign="Middle">
+						<cells>
+							<Text text="{mTablesAvisos>FECHA}"/>
+							<Text text="{mTablesAvisos>TITULO}"/>
+							<Text text="{mTablesAvisos>CUERPO}"/>
+							<CheckBox selected="{mTablesAvisos>ESTATUSLECTURA}" select="onItemPressAvisos"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>
